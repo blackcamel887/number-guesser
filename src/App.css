@@ -34,7 +34,9 @@ h2{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+/*
+  The top blue square, includes a text element
+*/
 .part{
   width: 13vw;
   padding-top: calc(13vh - 1.85vw);
@@ -65,9 +67,9 @@ button:hover{
   background-color: lightgreen;
   color:rgb(57, 54, 54);
 }
-button:active{
-  box-shadow: 0;
-}
+/*
+  The text box that is in the top blue square
+*/
 text{
   font-size: 2.75vw;
   color:darkblue;
@@ -75,6 +77,9 @@ text{
   margin-top: auto;
   margin-bottom: auto;
 }
+/*
+  the bottom blue sqaure, this is an input element
+*/
 input{
   font-size: 3.7vw;
   min-width: 13vw;

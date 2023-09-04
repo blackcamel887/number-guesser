@@ -4,7 +4,7 @@ let ans = Math.floor(Math.random()*100)+1;//the answer to check on between 1 and
 function App() {
   let [userInput,setUserInput] = useState();//the holder for the userInput
   let [outputMessage,setOutputMessage] = useState('?');//the holder for the message for user
-  let [gameState,setGameState] = useState('default');
+  let [gameState,setGameState] = useState('default');//game state holder
   let [buttonMessage,setButtonMessage] = useState('Check')
   //the functionality to control the users input
   function handleInputChange(e){
@@ -20,6 +20,7 @@ function App() {
         console.log(ans);
         setOutputMessage('Too small!');
       }
+      //switches gameState and updates correspoding messages
       else if(userInput===`${ans}`){
         console.log('hi');
         setOutputMessage('Bingo!');
@@ -30,6 +31,7 @@ function App() {
         setOutputMessage('Too big!');
       }
     }
+    //revert back all the states back to default state
     else if(gameState==='winner'){
       setButtonMessage('Check');
       ans = Math.floor(Math.random()*100)+1;//creates a new answer to check on between 1 and 100 inclusive
