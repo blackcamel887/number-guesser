@@ -1,7 +1,18 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
-
+::placeholder{
+  color:rgb(0, 191, 255);
+}
+h2{
+  border-color: rgb(235, 110, 131);
+  border-style: dotted;
+  border-width: 5px;
+  width: fit-content;
+  margin: auto;
+  padding:5px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -24,10 +35,58 @@
   color: white;
 }
 
+.part{
+  width: 13vw;
+  padding-top: calc(13vh - 1.85vw);
+  padding-bottom: calc(13vh - 1.85vw);
+  background-color: #61dafb;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
 .App-link {
   color: #61dafb;
 }
-
+button{
+  background-color: rgb(56, 222, 56);
+  width:fit-content;
+  height: fit-content;
+  font-weight: bold;
+  font-size: 2vw;
+  border: 3px solid black;
+  border-radius:12%;
+  box-shadow: 1px 2px;
+  margin-top: 3vh;
+  text-align: center;
+  justify-content:center;
+}
+button:hover{
+  background-color: lightgreen;
+  color:rgb(57, 54, 54);
+}
+button:active{
+  box-shadow: 0;
+}
+text{
+  font-size: 2.75vw;
+  color:darkblue;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+input{
+  font-size: 3.7vw;
+  min-width: 13vw;
+  max-width: 13vw;
+  min-height: 26vh;
+  max-height: 26vh;
+  width: max-content;
+  background-color: #61dafb;
+  text-align: center;
+  border-width: 0;
+  color:darkblue;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
